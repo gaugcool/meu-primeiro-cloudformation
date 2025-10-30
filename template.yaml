@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Exemplo de Stack segura para Free Tier
+
+Resources:
+  MeuBucketS3:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: minha-stack-dio-exemplo
+
+Outputs:
+  BucketName:
+    Description: "Nome do bucket criado"
+    Value: !Ref MeuBucketS3
